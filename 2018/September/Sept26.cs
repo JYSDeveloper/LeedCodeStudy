@@ -38,11 +38,10 @@ namespace _2018.September
             var dic = new Dictionary<int, int>();
             for (int i = 0; i < args.Length; i++)
             {
-                dic.Add(args[i], i);
-                if (target < args[i]) continue;
                 var subValue = target - args[i];
                 if (dic.ContainsKey(subValue))
                     return new int[] { dic[subValue],i };
+                dic.Add(args[i], i);
             }
             return null;
         }
