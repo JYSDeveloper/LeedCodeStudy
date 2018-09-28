@@ -55,5 +55,15 @@ namespace _2018.Test
             Assert.AreEqual(Sep27.Reverse(120), 21);
         }
         #endregion
+        #region
+        [TestMethod]
+        public void Sep28Test_One()
+        {
+            Assert.IsTrue(Sep28.IsPalindrome(123456654321));
+            Assert.IsFalse(Sep28.IsPalindrome(-121));
+            Assert.IsFalse(Sep28.IsPalindrome(10));
+            Assert.IsTrue(Sep28.IsPalindrome(121));
+        }
+        #endregion
     }
 }
