@@ -45,6 +45,7 @@
     <Compile Include="October\Oct09.cs" />
     <Compile Include="October\Oct11.cs" />
     <Compile Include="October\Oct15.cs" />
+    <Compile Include="October\Oct16.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="September\Sep26.cs" />
     <Compile Include="September\Sep28.cs" />

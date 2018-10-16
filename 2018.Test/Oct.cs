@@ -63,5 +63,15 @@ namespace _2018.Test
             var temp = Oct15.MergeTwoLists(one, three);
         }
         #endregion
+
+        #region Oct-16
+        [TestMethod]
+        public void Oct16_TestOne()
+        {
+            int[] nums = new int[] { 0, 0,0,0, 1, 1, 2, 3, 4, 4, 6 };
+            var lenth = Oct16.RemoveDuplicates(nums);
+            Console.WriteLine(lenth);
+        }
+        #endregion
     }
 }
