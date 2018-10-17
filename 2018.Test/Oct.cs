@@ -73,5 +73,15 @@ namespace _2018.Test
             Console.WriteLine(lenth);
         }
         #endregion
+
+        #region Oct-17
+        [TestMethod]
+        public void Oct17_TestOne()
+        {
+            int[] nums = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };
+            var lenth = Oct17.RemoveElement(nums,2);
+            Console.WriteLine(lenth);
+        }
+        #endregion
     }
 }
