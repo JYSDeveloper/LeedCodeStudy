@@ -83,5 +83,16 @@ namespace _2018.Test
             Console.WriteLine(lenth);
         }
         #endregion
+
+        #region Oct-18
+        [TestMethod]
+        public void Oct18_TestOne()
+        {
+            var haystack = "abbbbabc";
+            var needle = "abc";
+            var lenth = Oct18.StrStr(haystack, needle);
+            Assert.AreEqual(lenth,5);
+        }
+        #endregion
     }
 }
