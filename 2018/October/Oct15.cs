@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2018.November;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,11 +26,11 @@ namespace _2018.October
         }
     }
 
-    public class ListNode
-    {
-       public int val;
-       public ListNode next;
-       public ListNode(int x) { val = x; }
+    //public class ListNode
+    //{
+    //   public int val;
+    //   public ListNode next;
+    //   public ListNode(int x) { val = x; }
 
-    }
+    //}
 }

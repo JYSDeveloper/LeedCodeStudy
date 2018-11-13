@@ -1,6 +1,7 @@
 ﻿using System;
 using _2018.October;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using _2018.November;
 
 namespace _2018.Test
 {
@@ -94,5 +95,13 @@ namespace _2018.Test
             Assert.AreEqual(lenth,5);
         }
         #endregion
+
+        [TestMethod]
+        public void Oct111_TestOne()
+        {
+            var one = ListNode.ConvertByIntNumber(5);
+            var two = ListNode.ConvertByIntNumber(5);
+            var rd = No2_AddTwoNumbers.AddTwoNumbers(one, two);
+        }
     }
 }

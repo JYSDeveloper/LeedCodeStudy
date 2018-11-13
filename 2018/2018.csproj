@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="November\No2_AddTwoNumbers.cs" />
     <Compile Include="October\Oct08.cs" />
     <Compile Include="October\Oct09.cs" />
     <Compile Include="October\Oct11.cs" />
