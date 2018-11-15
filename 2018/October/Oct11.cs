@@ -52,14 +52,16 @@ namespace _2018.October
 
         public static bool IsValid(string s)
         {
-            if (string.IsNullOrEmpty(s) || s.Length % 2 != 0)
+            if (s==null || s.Length % 2 != 0)
                 return false;
+            if (s == "")
+                return true;
             var stack = new Stack<char>();
             for (int i = 0; i < s.Length; i++)
             {
                 if (matchValue.ContainsKey(s[i]))
                 {
-                    if (stack.Peek() != matchValue[s[i]])
+                    if (stack.Count == 0 ||stack.Peek() != matchValue[s[i]])
                         return false;
                     stack.Pop();
                 }

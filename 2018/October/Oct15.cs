@@ -1,4 +1,5 @@
-﻿using _2018.November;
+﻿
+using _2018.HelperEntity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,12 +26,4 @@ namespace _2018.October
             }
         }
     }
-
-    //public class ListNode
-    //{
-    //   public int val;
-    //   public ListNode next;
-    //   public ListNode(int x) { val = x; }
-
-    //}
 }

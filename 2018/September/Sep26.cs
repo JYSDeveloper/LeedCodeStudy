@@ -41,6 +41,8 @@ namespace _2018.September
                 var subValue = target - args[i];
                 if (dic.ContainsKey(subValue))
                     return new int[] { dic[subValue],i };
+                if (dic.ContainsKey(args[i]))
+                    continue;
                 dic.Add(args[i], i);
             }
             return null;

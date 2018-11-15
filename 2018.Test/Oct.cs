@@ -2,6 +2,7 @@
 using _2018.October;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using _2018.November;
+using _2018.HelperEntity;
 
 namespace _2018.Test
 {
@@ -35,7 +36,7 @@ namespace _2018.Test
         [TestMethod]
         public void Oct11Test_One()
         {
-            string test = @"(({{}}))";
+            string test = "){";
             Assert.IsTrue(Oct11.IsValid(test));
         }
         #endregion
@@ -99,9 +100,10 @@ namespace _2018.Test
         [TestMethod]
         public void Oct111_TestOne()
         {
-            var one = ListNode.ConvertByIntNumber(5);
-            var two = ListNode.ConvertByIntNumber(5);
+            var one = ListNode.ConvertByIntNumber(2);
+            var two = ListNode.ConvertByIntNumber(899);
             var rd = No2_AddTwoNumbers.AddTwoNumbers(one, two);
+            //.showValue();
         }
     }
 }

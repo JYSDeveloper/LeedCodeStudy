@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2018.HelperEntity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,25 @@ namespace _2018.November
     {
         public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
-            return AddTwoNumbersWithoutReload(l1, l2, 0);
+            ListNode dummyHead = new ListNode(0);
+            ListNode p = l1, q = l2, curr = dummyHead;
+            int carry = 0;
+            while (p != null || q != null)
+            {
+                int x = (p != null) ? p.val : 0;
+                int y = (q != null) ? q.val : 0;
+                int sum = carry + x + y;
+                carry = sum / 10;
+                curr.next = new ListNode(sum % 10);
+                curr = curr.next;
+                if (p != null) p = p.next;
+                if (q != null) q = q.next;
+            }
+            if (carry > 0)
+            {
+                curr.next = new ListNode(carry);
+            }
+            return dummyHead.next;
         }
 
         public static void ReLoad(ListNode node)
@@ -56,24 +75,4 @@ namespace _2018.November
         }
 
     }
-    public class ListNode
-    {
-         public int val;
-         public ListNode next;
-         public ListNode(int x) { val = x; }
-
-        public static ListNode ConvertByIntNumber(int val)
-        {
-            var result = new ListNode(val % 10);
-            var temp = result;
-            while (val / 10 != 0)
-            {
-                val /= 10;
-                temp.next = new ListNode(val % 10);
-                temp = temp.next;
-            }
-
-            return result;
-        }
-     }
 }
