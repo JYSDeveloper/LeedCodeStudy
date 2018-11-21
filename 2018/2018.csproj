@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="HelperEntity\ListNode.cs" />
     <Compile Include="HelperEntity\TreeNode.cs" />
+    <Compile Include="November\No18_4Sum.cs" />
     <Compile Include="November\No2_AddTwoNumbers.cs" />
     <Compile Include="November\No501_FindModeInBinarySearchTree.cs" />
     <Compile Include="October\Oct08.cs" />
