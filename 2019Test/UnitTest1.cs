@@ -24,6 +24,11 @@ namespace _2019Test
 
             n1.Show();
 
+            //var result = SingleLinkedList<int>.SwapPairs(n1);
+            //result.Show();
+            //Console.WriteLine(SingleLinkedList<int>.isCircle(n1));
+            SingleLinkedList<int>.ReverseLinkedList(n1).Show();
+            
         }
     }
 }
